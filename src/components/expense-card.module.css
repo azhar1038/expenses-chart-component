@@ -1,0 +1,28 @@
+.card {
+  padding: 1rem;
+  width: min(35rem, 100vw);
+  min-width: 25rem;
+}
+
+.header {
+  padding: 1.75rem;
+  margin-block-end: 1.5rem;
+  border-radius: 1.25rem;
+}
+
+.chart-wrapper {
+  padding: 2.5rem;
+  border-radius: 1.25rem;
+}
+
+.chart {
+  height: 15rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1rem;
+}
+
+.status {
+  align-items: flex-end;
+}

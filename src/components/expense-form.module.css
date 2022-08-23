@@ -1,0 +1,36 @@
+.expense-form {
+  position: fixed;
+  bottom: 1rem;
+  right: 5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(120%);
+  transition: transform 250ms ease-in-out,
+    opacity 250ms ease-in-out,
+    visibility 250ms;
+}
+
+.expense-form[data-open="true"] {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.form-input {
+  gap: 1rem;
+  align-items: center;
+  padding-block: 0.5rem;
+}
+
+.form-input input {
+  width: 5rem;
+  border-radius: 0.25rem;
+  border: none;
+  outline-offset: 5px;
+}
+
+.form-input input:focus-visible {
+  outline: 2px dashed var(--clr-primary-100);
+}
